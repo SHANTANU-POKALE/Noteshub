@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light Grey background */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff; /* White header background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 20px;
+  display: flex; /* Header elements arranged horizontally */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: center; /* Align elements vertically in center */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f51b5; /* Material Blue accent color */
+  text-decoration: none;
+}
+
+.search {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Space navigation items evenly */
+}
+
+.nav-item {
+  margin: 0 10px; /* Add some margin between items */
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #3f51b5; /* Material Blue accent color on hover */
+}
+
+/* Note Section Styles */
+.note-section {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.note-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.note {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0; /* Light grey background for notes */
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Indicate clickable notes */
+}
+
+.note a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 20px;
+}
+
+.note:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+}
