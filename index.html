@@ -1,128 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noteshub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #f4f4f4;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-        .container {
-            margin: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .note {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .note:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        .note h2 {
-            margin-top: 0;
-        }
-        .note a {
-            display: block;
-            margin-top: 10px;
-            background-color: #3d7070ca;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .note a:hover {
-            background-color: #3b3c3c;
-        }
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noteshub</title>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <header>
-        <h1>Noteshub</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#section1">Computer Architecture</a></li>
-            <li><a href="#section2">Communication Network</a></li>
-            <li><a href="#section3">Economics for Engineer</a></li>
-            <li><a href="#section4">professional Elective</a></li>
-            <li><a href="#section5">Open Elective</a></li>
-        </ul>
-    </nav>
+  <header class="header">
     <div class="container">
-        <section id="section1" class="note-section">
-            <h2>Computer Architecture</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1mYFsq2jvCA8WlXDFek5itNv9jvpimkFx?usp=drive_link" download>CA</a>
-            </div>
-        </section>
-        <section id="section2" class="note-section">
-            <h2>Communication Network</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1LJlnpmEjbuEW59dKWWWVL_91-PCuBXrb?usp=drive_link" download>CN</a>
-            </div>
-        </section>
-        <section id="section3" class="note-section">
-            <h2>Economics for Engineer</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1cwUJQtvtTUPRP_5fXcU4ayoVchkIB_Zu?usp=drive_link" download>EFE</a>
-            </div>
-        </section>
-        <section id="section4" class="note-section">
-            <h2> Satellite Communication</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1a_8OmPy4E8LQa-p20fUljzkyYELlb__P?usp=drive_link" download>SAT-COM</a>
-            </div>
-        </section>
+      <a href="#" class="logo">Noteshub</a> <input type="text" class="search" placeholder="Search Notes"> </div>
+  </header>
 
-         <section id="section4" class="note-section">
-            <h2> CMOS</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1VobNvF3D_IEWq1lluCgCkPoIHCJnPmG-?usp=drive_link" download>CMOS</a>
-            </div>
-        </section>
-        
-        <section id="section5" class="note-section">
-            <h2>Data communication & Internet</h2>
-            <div class="note">
-                <a href="https://drive.google.com/drive/folders/1y84ryi15NvjQNiDQXM_rgIjffkwwvD8l?usp=drive_link" download>DCI</a>
-            </div>
-        </section>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#section1">Computer Architecture</a></li>
+        <li class="nav-item"><a href="#section2">Communication Network</a></li>
+        <li class="nav-item"><a href="#section3">Economics for Engineer</a></li>
+        <li class="nav-item"><a href="#section4">Satellite Communication</a></li>
+        <li class="nav-item"><a href="#section5">CMOS</a></li>
+        <li class="nav-item"><a href="#section6">Data Communication & Internet</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <div class="container">
+    <section id="section1" class="note-section">
+      <h2>Computer Architecture</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1mYFsq2jvCA8WlXDFek5itNv9jvpimkFx?usp=drive_link" download>CA</a>
+      </div>
+    </section>
+    <section id="section2" class="note-section">
+      <h2>Communication Network</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1LJlnpmEjbuEW59dKWWWVL_91-PCuBXrb?usp=drive_link" download>CN</a>
+      </div>
+    </section>
+    <section id="section3" class="note-section">
+      <h2>Economics for Engineer</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1cwUJQtvtTUPRP_5fXcU4ayoVchkIB_Zu?usp=drive_link" download>EFE</a>
+      </div>
+    </section>
+    <section id="section4" class="note-section">
+      <h2>Satellite Communication</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1a_8OmPy4E8LQa-p20fUljzkyYELlb__P?usp=drive_link" download>SAT-COM</a>
+      </div>
+    </section>
+    <section id="section5" class="note-section">
+      <h2>CMOS</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1VobNvF3D_IEWq1lluCgCkPoIHCJnPmG-?usp=drive_link" download>CMOS</a>
+      </div>
+    </section>
+    <section id="section6" class="note-section">
+      <h2>Data Communication & Internet</h2>
+      <div class="note">
+        <a href="https://drive.google.com/drive/folders/1y84ryi15NvjQNiDQXM_rgIjffkwwvD8l?usp=drive_link" download>DCI</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script> 
 </body>
 </html>
